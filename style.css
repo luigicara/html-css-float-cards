@@ -14,31 +14,25 @@ header {
     height: 120px;
     line-height: 120px;
     margin-bottom: 30px;
-    /* DEBUG */
-    background-color: blue;
 }
 
 h1 {
+    color: #e53170;
     text-align: center;
 }
 
 /* main */
-main {
-    /* DEBUG */
-    background-color: brown;
-    height: 500px;
+p {
+    text-align: center;
 }
 
 .container {
     width: 70%;
     margin: 0 auto;
-    /* DEBUG */
-    background-color: aquamarine;
-    height: 400px;
 }
 
 .row {
-    /* DEBUG */
+    margin: 50px 0;;
 }
 
 .row:after {
@@ -50,10 +44,6 @@ main {
 .col {
     width: calc(100% / 3);
     float: left;
-    /* DEBUG */
-    background-color: white;
-    height: 300px;
-    border: 3px solid black;
 }
 
 .col.left {
@@ -66,4 +56,37 @@ main {
 
 .col.right {
     padding-left: 20px;
+}
+
+.card{
+    background-color: black;
+    width: 100%;
+}
+
+.card::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+img {
+    height: 100px;
+    vertical-align: middle;
+}
+
+.info {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    margin-left: 10px;
+}
+
+.info span {
+    display: inline-block;
+    margin: 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color:#0397d9;
 }
